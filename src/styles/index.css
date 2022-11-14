@@ -10,3 +10,176 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.BrandContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .5rem;
+}
+.LogoContainer{
+    margin: .25rem;
+    height: 3rem;
+    width: 3rem;
+    animation: rotate 5s  linear infinite;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+    
+}
+.ReactTitle{
+    cursor: pointer;
+    padding: .25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 1rem;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    border-radius: 8px;
+    transition: 300ms;
+}
+.ReactTitle:hover{
+    color:white;
+    background-color: rgba(95, 158, 160, 0.493);
+}
+.MainContainer{
+    background-color: rgba(197, 200, 204, 0.493);
+    height: 100vh;
+}
+.ContentWrapper{
+    border: 2px solid gray;
+    border-radius: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ 
+}
+.LeftContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.RightContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 1rem;
+}
+.ImgJumboContainer{
+    border-radius: 1rem;
+    margin: 1rem;
+    width: max-content;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.ImgJumboContainer:hover::before{
+    transform: translateY(0);
+}
+.ImgJumboContainer:before{
+    border-radius: inherit;
+    content: "Hello There!";
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: white;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.575);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: 500ms ease;
+}
+.JumbotronImg{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 1rem;
+    object-fit: contain;
+}
+.jumbotronContainer{
+    
+    background-color: white;
+    margin-top: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: max-content;
+}
+.ImgFooter{
+    width: 100%;
+    padding: .25rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+.JumboInfo{
+    margin: auto;
+    padding:2rem;
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+}
+.JumboTitle{
+    text-align: center;
+}
+.randomCards{
+
+    padding: .25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: max-content;
+}
+
+.CardElement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    padding: .25rem;
+    height: max-content;
+    border-radius: 1rem;
+    box-shadow: 2px 0px 10px 1px rgba(0, 0, 0, .5);
+}
+.cardImgcontainer{
+    border-radius: 50%;
+    height:8rem;
+    width: 8rem;
+    border: 2px solid rgba(22, 19, 19, 0.459);
+}
+.cardImg{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.theonlybutton{
+    width: 8rem;
+    height: 2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(18, 12, 51, 0.815);
+    transition: 400ms;
+}
+.theonlybutton:hover{
+    background-color: #ddd;
+    color: black;
+}
